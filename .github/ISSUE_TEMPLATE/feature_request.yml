@@ -1,0 +1,60 @@
+name: Feature request
+description: Suggest an improvement for @cachey/express
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape Cachey. Please focus on the problem first, then describe the proposed solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What developer problem or limitation are you trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the API, behavior, or workflow you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Are there existing workarounds or alternative designs?
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example usage
+      description: Optional example of how the feature could look from a user's perspective.
+      render: javascript
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Could this require a breaking API change?
+      options:
+        - Unknown
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before submitting this request.
+          required: true
+        - label: I described the underlying problem, not only a preferred implementation.
+          required: true
