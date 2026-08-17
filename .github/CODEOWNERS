@@ -1,0 +1,9 @@
+# Default ownership for the public @cachey/express repository
+* @itsdave22
+
+# Documentation and public examples
+/docs/ @itsdave22
+/examples/ @itsdave22
+
+# GitHub project configuration
+/.github/ @itsdave22
