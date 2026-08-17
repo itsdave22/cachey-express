@@ -1,0 +1,12 @@
+{
+  "name": "cachey-express-basic-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@cachey/express": "latest",
+    "express": "latest"
+  }
+}
