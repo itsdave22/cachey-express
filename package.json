@@ -3,24 +3,29 @@
   "version": "1.0.0",
   "description": "Fast and flexible caching middleware for Express.js with memory and Redis caching.",
   "keywords": [
+    "cachey",
     "express",
     "expressjs",
     "nodejs",
+    "javascript",
     "cache",
     "caching",
     "middleware",
     "redis",
     "performance",
     "api-cache",
-    "server-cache"
+    "response-cache",
+    "server-cache",
+    "stale-while-revalidate",
+    "cache-invalidation"
   ],
   "homepage": "https://cachey.eu/express",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsdave22/cachey-express.git"
+    "url": "git+https://github.com/cachey-eu/cachey-express.git"
   },
   "bugs": {
-    "url": "https://github.com/itsdave22/cachey-express/issues"
+    "url": "https://github.com/cachey-eu/cachey-express/issues"
   },
   "license": "MIT"
 }
