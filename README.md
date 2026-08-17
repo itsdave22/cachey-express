@@ -5,7 +5,6 @@
 `@cachey/express` is the developer-focused caching package from [Cachey](https://cachey.eu). It aims to make response caching easier to add to Express applications while keeping configuration understandable and predictable.
 
 [![npm](https://img.shields.io/npm/v/@cachey/express?label=npm)](https://www.npmjs.com/package/@cachey/express)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Website](https://img.shields.io/badge/Website-cachey.eu-00a6ff)](https://cachey.eu/express)
 
 ## Installation
@@ -101,6 +100,12 @@ Documentation and examples will be expanded around:
 
 Roadmap items are directional and do not guarantee a specific release date.
 
+## Source-code strategy
+
+The public Cachey repository is intended for documentation, examples, issue tracking, release information and selected integration code. The proprietary core implementation does not need to be published here.
+
+No open-source license is granted by this repository unless a specific file or component explicitly states otherwise. A separate package or component may use its own license terms.
+
 ## Security
 
 Please **do not report security vulnerabilities in public issues**. Read [SECURITY.md](./SECURITY.md) for the responsible disclosure process.
@@ -110,10 +115,6 @@ Please **do not report security vulnerabilities in public issues**. Read [SECURI
 Bug reports, documentation improvements and feature proposals are welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
 Please also follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
-
-## License
-
-MIT © Cachey. See [LICENSE](./LICENSE).
 
 ---
 
