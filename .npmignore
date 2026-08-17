@@ -1,0 +1,20 @@
+# Development-only files
+.github/
+.vscode/
+.idea/
+coverage/
+.nyc_output/
+examples/
+docs/
+*.log
+*.tgz
+
+# Local/environment files
+.env
+.env.*
+!.env.example
+
+# Project administration docs not required at runtime
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+SECURITY.md
