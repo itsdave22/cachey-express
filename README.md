@@ -1,16 +1,22 @@
-# @cachey/express
+# @cachey/express 🐿️
 
-Fast, flexible caching middleware for Express.js.
+**Fast, flexible caching middleware for Express.js.**
 
-Reduce response times, lower server load and add intelligent
-caching to your Express APIs with only a few lines of code.
+`@cachey/express` is the developer-focused caching package from [Cachey](https://cachey.eu). It aims to make response caching easier to add to Express applications while keeping configuration understandable and predictable.
+
+[![npm](https://img.shields.io/npm/v/@cachey/express?label=npm)](https://www.npmjs.com/package/@cachey/express)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![Website](https://img.shields.io/badge/Website-cachey.eu-00a6ff)](https://cachey.eu/express)
 
 ## Installation
 
+```bash
 npm install @cachey/express
+```
 
-## Quick Start
+## Quick start
 
+```js
 import express from "express";
 import { cache } from "@cachey/express";
 
@@ -20,22 +26,95 @@ app.get(
   "/api/products",
   cache({ ttl: 60 }),
   async (req, res) => {
-    // ...
+    res.json({ products: [] });
   }
 );
 
-⚡ Features
-📦 Installation
-🚀 Quick Start
-🧠 Cache strategies
-🗄️ Memory Cache
-🔴 Redis
-♻️ Stale-While-Revalidate
-🔑 Cache Keys
-🧹 Invalidation
-📊 Cache Hit / Miss
-⚙️ Configuration
-🧪 Examples
-📈 Benchmarks
-🔐 Security
-📚 Documentation
+app.listen(3000);
+```
+
+> The public API may evolve between releases. Check the installed package version and release notes before upgrading production applications.
+
+## Why Cachey?
+
+Caching can reduce repeated work, improve response times and lower load on application servers. Cachey is designed around an Express-friendly developer experience with simple integration and room for more advanced caching strategies.
+
+## Focus areas
+
+- Express middleware integration
+- TTL-based response caching
+- Predictable cache keys
+- Cache HIT / MISS visibility
+- Memory caching
+- Redis-backed caching
+- Cache invalidation
+- Stale-While-Revalidate strategies
+- Performance and telemetry tooling
+
+Feature availability can vary by package version. Use the published package documentation and GitHub releases as the source of truth for a specific release.
+
+## Usage
+
+### Route-level caching
+
+```js
+app.get(
+  "/api/products",
+  cache({ ttl: 60 }),
+  async (req, res) => {
+    const products = await loadProducts();
+    res.json(products);
+  }
+);
+```
+
+### TTL examples
+
+Use shorter TTL values for frequently changing data and longer TTL values for content that changes rarely.
+
+```js
+cache({ ttl: 30 });
+cache({ ttl: 300 });
+cache({ ttl: 3600 });
+```
+
+## Documentation
+
+- Cachey: https://cachey.eu
+- `@cachey/express`: https://cachey.eu/express
+- npm: https://www.npmjs.com/package/@cachey/express
+- Issues: https://github.com/cachey-eu/cachey-express/issues
+
+## Roadmap
+
+Documentation and examples will be expanded around:
+
+- [ ] Global and route-level middleware examples
+- [ ] Memory cache configuration
+- [ ] Redis adapter configuration
+- [ ] Custom cache-key strategies
+- [ ] Cache invalidation examples
+- [ ] Stale-While-Revalidate examples
+- [ ] Metrics and telemetry
+- [ ] Benchmarks
+- [ ] Production deployment guidance
+
+Roadmap items are directional and do not guarantee a specific release date.
+
+## Security
+
+Please **do not report security vulnerabilities in public issues**. Read [SECURITY.md](./SECURITY.md) for the responsible disclosure process.
+
+## Contributing
+
+Bug reports, documentation improvements and feature proposals are welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+
+Please also follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+## License
+
+MIT © Cachey. See [LICENSE](./LICENSE).
+
+---
+
+**Consent. Cache. Kontrolle.** 🐿️💙
