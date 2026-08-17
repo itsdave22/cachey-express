@@ -82,23 +82,18 @@ cache({ ttl: 3600 });
 - Cachey: https://cachey.eu
 - `@cachey/express`: https://cachey.eu/express
 - npm: https://www.npmjs.com/package/@cachey/express
-- Issues: https://github.com/cachey-eu/cachey-express/issues
+- [Public architecture overview](./docs/ARCHITECTURE.md)
+- [Examples](./examples/README.md)
+- [Roadmap](./ROADMAP.md)
+- [Support](./SUPPORT.md)
+- [Public repository policy](./docs/PUBLIC-REPOSITORY-POLICY.md)
+- [Release process](./docs/RELEASING.md)
 
 ## Roadmap
 
-Documentation and examples will be expanded around:
+The public roadmap covers API stabilization, documentation, Redis, invalidation, SWR, telemetry, production guidance and future integrations.
 
-- [ ] Global and route-level middleware examples
-- [ ] Memory cache configuration
-- [ ] Redis adapter configuration
-- [ ] Custom cache-key strategies
-- [ ] Cache invalidation examples
-- [ ] Stale-While-Revalidate examples
-- [ ] Metrics and telemetry
-- [ ] Benchmarks
-- [ ] Production deployment guidance
-
-Roadmap items are directional and do not guarantee a specific release date.
+➡️ [View the full roadmap](./ROADMAP.md)
 
 ## Source-code strategy
 
