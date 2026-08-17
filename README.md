@@ -23,3 +23,19 @@ app.get(
     // ...
   }
 );
+
+⚡ Features
+📦 Installation
+🚀 Quick Start
+🧠 Cache strategies
+🗄️ Memory Cache
+🔴 Redis
+♻️ Stale-While-Revalidate
+🔑 Cache Keys
+🧹 Invalidation
+📊 Cache Hit / Miss
+⚙️ Configuration
+🧪 Examples
+📈 Benchmarks
+🔐 Security
+📚 Documentation
