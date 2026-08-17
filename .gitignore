@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Cache and temporary files
+.cache/
+.tmp/
+tmp/
+*.log
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test / tooling artifacts
+*.lcov
+.eslintcache
+
+# Local package archives
+*.tgz
