@@ -6,6 +6,8 @@ Welcome to the public documentation area for `@cachey/express`.
 
 - [Getting started](./GETTING_STARTED.md)
 - [Caching concepts](./CACHING-CONCEPTS.md)
+- [Secure caching](./SECURE-CACHING.md)
+- [Troubleshooting](./TROUBLESHOOTING.md)
 - [FAQ](./FAQ.md)
 
 ## Project information
