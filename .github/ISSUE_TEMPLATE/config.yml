@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Cachey website
+    url: https://cachey.eu
+    about: Product information and official Cachey links.
+  - name: Security report
+    url: https://cachey.eu
+    about: Do not report vulnerabilities publicly. Use the official private contact channel listed on Cachey.
