@@ -1,0 +1,26 @@
+{
+  "name": "@cachey/express",
+  "version": "1.0.0",
+  "description": "Fast and flexible caching middleware for Express.js with memory and Redis caching.",
+  "keywords": [
+    "express",
+    "expressjs",
+    "nodejs",
+    "cache",
+    "caching",
+    "middleware",
+    "redis",
+    "performance",
+    "api-cache",
+    "server-cache"
+  ],
+  "homepage": "https://cachey.eu/express",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsdave22/cachey-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsdave22/cachey-express/issues"
+  },
+  "license": "MIT"
+}
