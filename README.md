@@ -79,11 +79,20 @@ cache({ ttl: 3600 });
 
 ## Documentation
 
+### Start here
+
+- [Documentation index](./docs/README.md)
+- [Getting started](./docs/GETTING_STARTED.md)
+- [Caching concepts](./docs/CACHING-CONCEPTS.md)
+- [FAQ](./docs/FAQ.md)
+- [Examples](./examples/README.md)
+
+### Project
+
 - Cachey: https://cachey.eu
 - `@cachey/express`: https://cachey.eu/express
 - npm: https://www.npmjs.com/package/@cachey/express
 - [Public architecture overview](./docs/ARCHITECTURE.md)
-- [Examples](./examples/README.md)
 - [Roadmap](./ROADMAP.md)
 - [Support](./SUPPORT.md)
 - [Public repository policy](./docs/PUBLIC-REPOSITORY-POLICY.md)
